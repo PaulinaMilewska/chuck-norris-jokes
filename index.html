@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css" />
+        <title>Facts - not myths</title>
+    </head>
+    <body>
+        <h1>Chuck Norris <span style="color: red; font-size: 33px; font-weight: 600">facts</span></h1>
+        <form action="" class="search-bar">
+            <label for="search"><i class="fa fa-search"></i></label>
+            <input type="text" name="search" id="search" />
+            <button type="submit">Search</button>
+        </form>
+        <nav>
+            <ul class="categories">
+                <li data-category="home" data-select="true" class="home">
+                    <a href="/">
+                        <i class="fas fa-home"></i>
+                    </a>
+                    <ul>
+                        <li><a href="/"> All facts</a></li>
+                    </ul>
+                </li>
+                <li data-category="animal" data-select="false">
+                    <a href="/">
+                        <i class="fas fa-paw"></i>
+                    </a>
+                    <ul>
+                        <li><a href="/"> Facts about animals</a></li>
+                    </ul>
+                </li>
+                <li data-category="travel" data-select="false">
+                    <a href="/">
+                        <i class="fas fa-plane"></i>
+                    </a>
+                    <ul>
+                        <li><a href="/"> Facts about travel</a></li>
+                    </ul>
+                </li>
+                <li data-category="celebrity" data-select="false">
+                    <a href="/">
+                        <i class="fas fa-glass-cheers"></i>
+                    </a>
+                    <ul>
+                        <li><a href="/"> Facts about celebrity</a></li>
+                    </ul>
+                </li>
+                <li data-category="dev" data-select="false">
+                    <a href="/">
+                        <i class="fas fa-code"></i>
+                    </a>
+                    <ul>
+                        <li><a href="/"> Facts about dev</a></li>
+                    </ul>
+                </li>
+                <li data-category="food" data-select="false">
+                    <a href="/">
+                        <i class="fas fa-pizza-slice"></i>
+                    </a>
+                    <ul>
+                        <li><a href="/"> Facts about food</a></li>
+                    </ul>
+                </li>
+                <li data-category="money" data-select="false">
+                    <a href="/">
+                        <i class="fas fa-search-dollar"></i>
+                    </a>
+                    <ul>
+                        <li><a href="/"> Facts about money</a></li>
+                    </ul>
+                </li>
+                <li data-category="science" data-select="false">
+                    <a href="/">
+                        <i class="fas fa-flask"></i>
+                        <!-- <span data-hidden="true" class=" science"> Facts about science</span> -->
+                    </a>
+                    <ul>
+                        <li><a href="/"> Facts about science</a></li>
+                    </ul>
+                </li>
+                <li data-category="sport" data-select="false">
+                    <a href="/">
+                        <i class="fas fa-volleyball-ball"></i>
+                        <!-- <span data-hidden="true" class=" sport"> Facts about sport</span> -->
+                    </a>
+                    <ul>
+                        <li><a href="/"> Facts about sport</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <div class="container">
+            <main>
+                <div class="box">
+                    <a href=""><img src="./images/home.png" alt="" /></a>
+                </div>
+            </main>
+            <blockquote>
+                <p class="joke">PUSH THE BUTTON and read the facts &#10548; &#10548; &#10548;</p>
+            </blockquote>
+        </div>
+        <div class="categoryContainer display-none"></div>
+        <script src="./app.js"></script>
+    </body>
+</html>
